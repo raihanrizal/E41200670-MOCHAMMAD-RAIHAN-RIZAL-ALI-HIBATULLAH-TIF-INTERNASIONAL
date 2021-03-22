@@ -1,0 +1,15 @@
+package raihan;
+import java.util.Scanner;
+
+public class Prak_Scanner {
+    public static void main(String[] args){
+        Scanner si = new Scanner(System.in);
+        System.out.print("Masukan nilai1 = ");
+        int nilai1 = si.nextInt();
+         System.out.print("Masukan nilai2 = ");
+        int nilai2 = si.nextInt();
+        int jumlah = nilai1 + nilai2;
+         System.out.println("Jumlah = " +jumlah);
+       
+    }
+}
