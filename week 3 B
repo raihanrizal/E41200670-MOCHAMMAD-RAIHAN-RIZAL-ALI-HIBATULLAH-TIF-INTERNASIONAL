@@ -1,0 +1,19 @@
+package week_3;
+public class tugas_b {
+    public static void main(String[] args) {
+        // membuat variable
+        int [] ultah = {04,11,2001};
+        String [] nama = {"Mochammad","Raihan","Rizal","Ali","Hibatullah"};
+        // membuat prulangan
+        for(int i=0; i<ultah.length; i++){
+            System.out.println(ultah[i]);
+        }
+        for(int j=0; j<nama.length; j++){
+            // mengambil input
+            System.out.print(nama[j]);
+            System.out.print(" ");
+        }
+      
+        }
+    
+}
