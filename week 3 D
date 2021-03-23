@@ -1,0 +1,31 @@
+package week_3;
+import java.util.Scanner;
+public class tugas_d {
+      public static void main(String[] args) {
+           // membuat variable dan scanner
+        int [] harga = {0,10000,20000,15000,45000,10000} ;
+        String nama;
+        int total = 100000;
+        Scanner scan = new Scanner(System.in);
+         // mengambil input
+        System.out.println("               Kharisma Agung Plaza <KAP>");
+        System.out.println("                Promo Belanja Berhadiah");
+        System.out.println("             Khusus Pembelian 5 Baang Pertama");
+        System.out.println("             Dengan Harga Minumum Rp 10000,00");
+        System.out.println("---------------------------------------------------------------");
+        System.out.print("Masukan nama pembeli : ");
+        nama = scan.nextLine();
+        // membuat perulagnan
+        for(int i=1; i<harga.length; i++){
+            System.out.println("Masukan harga barang ke "+i+"        : " +harga[i]);
+        }
+        System.out.print("Total harga pembelian atas nama "+nama);
+        System.out.println(" adalah Rp "+total);
+        System.out.println(" ");
+        System.out.println("Selamat......");
+        System.out.println("Anda ,endapat hadiah 1 mug cantik");
+        System.out.println("---------------------------------------------------------------");
+        System.out.println("                    Terima Kasih");
+        System.out.println("     Anda Sudah Belanja Di Kharisna Agung Plaza");
+    }
+}
