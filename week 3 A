@@ -1,0 +1,13 @@
+package week_3;
+public class tugas_a {
+    public static void main(String[] args) {
+        // membuat variable 
+        String [] nama = {"Mochammad","Raihan","Rizal","Ali","Hibatullah"};
+       //membuat perulangan
+        for(int t=0; t<nama.length; t++){
+            // mengambil input
+            System.out.print(nama[t]);
+            System.out.print(" ");
+        }
+    }
+}
