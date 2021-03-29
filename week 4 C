@@ -1,0 +1,37 @@
+package week_4;
+import java.util.Scanner;
+public class C {
+      public static void main(String[] args) {
+    //membuat variable dan scanner     
+    int maksimum, minimum, jumlah, i, array[];
+    int rata=0;
+    Scanner scan = new Scanner(System.in);
+    //mengambil input
+    System.out.print("Masukkan banyaknya data nilai: ");
+    jumlah = scan.nextInt();
+    array = new int[jumlah];
+    //membuat perulagnan for
+    for(i = 0; i < jumlah; i++) {
+      System.out.print("Masukan data ilai ke-"+ (i+1) +": " );
+      array[i] = scan.nextInt();
+    }
+    maksimum = array[0];
+    minimum = array[0];
+    rata = maksimum - minimum;
+    //membuat perulagnan for dan statemen if untuk mencari maksimum dan mimum
+    for(i = 0; i < jumlah; i++) {
+      if (array[i] > maksimum){
+        maksimum = array[i];
+      }
+      else if(array[i] < minimum){
+                 minimum = array[i];    
+            }    
+    }
+    //statemen if untuk mencari rata ratanya
+    for ( int tambah : array ){
+            rata = rata+tambah/jumlah;}
+    System.out.println("Nilai minimum adalah "+minimum);
+     System.out.println("Nilai makasimum adalah "+maksimum);
+    System.out.println("Nilai rata ratanya adalah "+rata);
+  }
+}
