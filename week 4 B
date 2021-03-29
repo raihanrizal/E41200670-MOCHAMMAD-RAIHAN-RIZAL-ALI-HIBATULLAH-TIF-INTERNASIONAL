@@ -1,0 +1,19 @@
+package week_4;
+import java.util.Scanner;
+public class B {
+   public static void main(String[] args) {
+       //membuat variable dan scanner
+     int hitung=1;
+     // mengambil input
+    System.out.println("         Do__While         ");
+    System.out.println("Bilangan kelipatan 2 (1-100)");
+    System.out.println("============================");
+    //membuat perulagnan do while
+        do{
+            System.out.print("  "+hitung);
+            hitung=(hitung*2);
+        }
+        while(hitung<=100); 
+        System.out.println(" ");
+    }
+}
