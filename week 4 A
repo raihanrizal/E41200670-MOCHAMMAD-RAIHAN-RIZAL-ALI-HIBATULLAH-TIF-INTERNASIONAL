@@ -1,0 +1,22 @@
+package week_4;
+import java.util.Scanner;
+public class A {
+     public static void main(String[] args) {
+         // membuat variable dan scanner
+        Scanner input=new Scanner(System.in);
+        int awal, akhir;   
+          // mengambil input
+        System.out.print("Masukan Nilai Awal : ");
+        awal=input.nextInt();
+        System.out.print("Masukan Nilai Akhir : ");
+        akhir=input.nextInt();
+        System.out.println("--------------------------- ");
+           System.out.println("Deret Bilangan Genap");
+            // membuat perulagnan for
+              for(int i=awal;i<=akhir;i++){
+                if (i%2==0)
+                System.out.print(i+" ");
+                    }
+        System.out.println("");
+    }
+}
